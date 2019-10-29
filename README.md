@@ -1,6 +1,6 @@
-#JSON morphing and object grouping/re-ordering test.
+# JSON morphing and object grouping/re-ordering test.
 
-##Introduzione
+## Introduzione
 Ci si aspetta un progetto Maven.
 
 Da questa [URL](http://www.mocky.io/v2/5db8a72230000064005edf0d) da chiamare in GET sarà restituito un payload JSON
@@ -12,7 +12,7 @@ Una volta ottenuto il payload, esso andrà letto, interpretato e trasformato in 
 
 e scritti su disco, con i suddetti nomi, in una directory che dovrà chiamarsi `output`. 
 
-##Descrizione del payload
+## Descrizione del payload
 Ogni oggetto presente nel field `export_phrases` ha i seguenti fields:
 - `value` che contiene il testo della frase
 - `source_locale` che contiene la lingua sorgente
@@ -20,9 +20,9 @@ Ogni oggetto presente nel field `export_phrases` ha i seguenti fields:
 - `created_at` che contiene la data di quando la frase è stata generata
 - `collection_name` che contiene il nome della collection a cui la frase appartiene
 
-##Regole di Raggruppamento
+## Regole di Raggruppamento
 
-###Primo raggruppamento
+### Primo raggruppamento
 Il primo raggruppamento deve avvenire per lingua, quindi, ogni file di output prodotto conterrà una sola lingua target che sarà posta nel field metadata oltre che aggiunta al nome del file di
  output per poterlo distinguere.
 ```
@@ -39,7 +39,7 @@ Vanno quindi esclusi dal file output corrispondente le frasi che non hanno il lo
 Es:
 La frase `value: "If it hollers let it go"` ha nella lista `target_locales` un solo oggetto `locale: "fr-FR"` e quindi essa dovrà essere presente solo nel file output francese.
 
-###Secondo raggruppamento
+### Secondo raggruppamento
 Il secondo raggruppamento deve avvenire sulla base del campo `collection_name`, le frasi che appartengono alla stessa collection devono essere raggruppate.
 ```
 {
@@ -54,15 +54,15 @@ Il secondo raggruppamento deve avvenire sulla base del campo `collection_name`, 
   ]
 }
 ```
-###Ordinamento delle collections
+### Ordinamento delle collections
 Contestualmente al raggruppamento ( preferibilmente ) o in iterazioni successive, le collection vanno ordinate alfabeticamente.
 
 Es. nel file `output_fr-FR.json` le collection sono ordinate:
 1. `counting_rhyme` 
 2. `sing_that_song`
 
-###Ordinamento delle phrases
+### Ordinamento delle phrases
 All'interno delle collections, le phrases devono essere ordinate in maniera **crescente** sulla base della data `created_at`.
 
-##Conclusione
+## Conclusione
 Se le regole di raggruppamento e ordinamento verranno rispettate i file json di output risulteranno identici a quelli forniti nella traccia.
