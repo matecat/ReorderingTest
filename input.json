@@ -1,0 +1,119 @@
+{
+  "metadata": {},
+  "export_phrases": [
+    {
+      "value": "Oh no, I know a dirty word",
+      "source_locale": "en",
+      "target_locales": [
+        {
+          "locale": "fr-FR"
+        },
+        {
+          "locale": "it-IT"
+        }
+      ],
+      "created_at": "2012-02-07T22:53:23Z",
+      "collection_name": "sing_that_song"
+    },
+    {
+      "value": "Catch the tiger by his toe",
+      "source_locale": "en",
+      "target_locales": [
+        {
+          "locale": "fr-FR"
+        }
+      ],
+      "created_at": "2013-02-07T19:01:28Z",
+      "collection_name": "counting_rhyme"
+    },
+    {
+      "value": "It's fun to lose and to pretend",
+      "source_locale": "en",
+      "target_locales": [
+        {
+          "locale": "fr-FR"
+        },
+        {
+          "locale": "it-IT"
+        }
+      ],
+      "created_at": "2012-02-07T22:50:24Z",
+      "collection_name": "sing_that_song"
+    },
+    {
+      "value": "Eeny, meeny, miny, moe.",
+      "source_locale": "en",
+      "target_locales": [
+        {
+          "locale": "fr-FR"
+        }
+      ],
+      "created_at": "2013-02-07T21:00:28Z",
+      "collection_name": "counting_rhyme"
+    },
+    {
+      "value": "Load up on guns, bring your friends",
+      "source_locale": "en",
+      "target_locales": [
+        {
+          "locale": "fr-FR"
+        },
+        {
+          "locale": "it-IT"
+        }
+      ],
+      "created_at": "2012-02-07T22:50:23Z",
+      "collection_name": "sing_that_song"
+    },
+    {
+      "value": "Hello, hello, hello, how low",
+      "source_locale": "en",
+      "target_locales": [
+        {
+          "locale": "fr-FR"
+        },
+        {
+          "locale": "it-IT"
+        }
+      ],
+      "created_at": "2012-02-07T23:53:23Z",
+      "collection_name": "sing_that_song"
+    },
+    {
+      "value": "If it hollers let it go",
+      "source_locale": "en",
+      "target_locales": [
+        {
+          "locale": "fr-FR"
+        }
+      ],
+      "created_at": "2013-02-07T20:00:28Z",
+      "collection_name": "counting_rhyme"
+    },
+    {
+      "value": "She's over-bored and self-assured",
+      "source_locale": "en",
+      "target_locales": [
+        {
+          "locale": "fr-FR"
+        },
+        {
+          "locale": "it-IT"
+        }
+      ],
+      "created_at": "2012-02-07T22:50:28Z",
+      "collection_name": "sing_that_song"
+    },
+    {
+      "value": "Eeny, meeny, miny, moe",
+      "source_locale": "en",
+      "target_locales": [
+        {
+          "locale": "fr-FR"
+        }
+      ],
+      "created_at": "2013-02-07T19:00:28Z",
+      "collection_name": "counting_rhyme"
+    }
+  ]
+}
