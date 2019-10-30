@@ -37,8 +37,14 @@ Una volta ottenuto il payload, esso andrà letto, interpretato e trasformato in 
 e scritti su disco, con i suddetti nomi, nella directory [`output`](https://github.com/matecat/ReorderingTest/tree/master/output). 
 #### *Si noti che questi due files sono le effettive soluzioni dell'esercizio.*
 
-## Descrizione del payload
+## Descrizione del payload e dei fields
+Partendo sempre dal JSON di input:
+
+- `metadata` contiene un oggetto vuoto
+- `export_phrases` contiene una lista di oggetti che definiscono una frase.
+
 Ogni oggetto presente nel field `export_phrases` ha i seguenti fields:
+
 - `value` che contiene il testo della frase
 - `source_locale` che contiene la lingua sorgente
 - `target_locales` che contiene una lista di uno o più oggetti `locale` che indicano la lingua di destinazione in cui andrebbe tradotta la frase.
@@ -61,8 +67,9 @@ Il primo raggruppamento deve avvenire per lingua, quindi, ogni file di output pr
 ```
 Vanno quindi esclusi dal file output corrispondente le frasi che non hanno il locale specificato.
 
-Es:
-La frase `value: "If it hollers let it go"` ha nella lista `target_locales` un solo oggetto `locale: "fr-FR"` e quindi essa dovrà essere presente solo nel file output francese.
+> Esempio:
+>
+> La frase `value: "If it hollers let it go"` ha nella lista `target_locales` un solo oggetto `locale: "fr-FR"` e quindi essa dovrà essere presente solo nel file output francese.
 
 ### Secondo raggruppamento
 Il secondo raggruppamento deve avvenire sulla base del campo `collection_name`, le frasi che appartengono alla stessa collection devono essere raggruppate.
@@ -82,9 +89,10 @@ Il secondo raggruppamento deve avvenire sulla base del campo `collection_name`, 
 ### Ordinamento delle collections
 Contestualmente al raggruppamento ( preferibilmente ) o in iterazioni successive, le collection vanno ordinate alfabeticamente.
 
-Es. nel file `output_fr-FR.json` le collection sono ordinate:
-1. `counting_rhyme` 
-2. `sing_that_song`
+> Esempio:
+> nel file [`output_fr-FR.json`](https://github.com/matecat/ReorderingTest/blob/master/output_fr-FR.json) le collection sono ordinate:
+> 1. `counting_rhyme` 
+> 2. `sing_that_song`
 
 ### Ordinamento delle phrases
 All'interno delle collections, le phrases devono essere ordinate in maniera **crescente** sulla base della data `created_at`.
