@@ -1,16 +1,41 @@
 # JSON morphing and object grouping/re-ordering test.
 
 ## Introduzione
-Ci si aspetta un progetto Maven.
+
+### Cosa ci aspettiamo
+Ci aspettiamo un progetto Maven.
+
+Quello che ci interessa è la qualità del tuo codice. 
+
+Ci aspettiamo codice corretto, ordinato e ragionevolmente strutturato.
+
+Ci aspettiamo la presenza di test unitari.
+
+### Nice to have
+Verrà valutata positivamente una buona code coverage.
+
+### Limitazioni 
+
+#### JVM
+Ci aspettiamo codice scritto e compilabile per Java 8+.
+
+Le nuove sintassi lambda sono accettate.
+
+#### Librerie
+Le uniche librerie accettate sono librerie necessarie al parsing del JSON e all'eventuale testing e deploy: Junit, mockito, ecc.
+
+
+## Traccia
 
 Da questa [URL](http://www.mocky.io/v2/5db8a72230000064005edf0d) da chiamare in GET sarà restituito un payload JSON
-come quello in esempio nel file `input.json`.
+come quello in esempio nel file [`input.json`](https://github.com/matecat/ReorderingTest/blob/master/input.json).
 
 Una volta ottenuto il payload, esso andrà letto, interpretato e trasformato in due JSON identici ( ovviamente non necessariamente nella formattazione ) a quelli presenti nei due files:
-- `output_fr-FR.json`
-- `output_it-IT.json`
+- [`output_fr-FR.json`](https://github.com/matecat/ReorderingTest/blob/master/output_fr-FR.json)
+- [`output_it-IT.json`](https://github.com/matecat/ReorderingTest/blob/master/output_it-IT.json)
 
-e scritti su disco, con i suddetti nomi, in una directory che dovrà chiamarsi `output`. 
+e scritti su disco, con i suddetti nomi, nella directory [`output`](https://github.com/matecat/ReorderingTest/tree/master/output). 
+#### *Si noti che questi due file sono le effettive soluzioni dell'esercizio.*
 
 ## Descrizione del payload
 Ogni oggetto presente nel field `export_phrases` ha i seguenti fields:
