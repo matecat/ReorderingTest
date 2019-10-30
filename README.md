@@ -35,7 +35,7 @@ Una volta ottenuto il payload, esso andrà letto, interpretato e trasformato in 
 - [`output_it-IT.json`](https://github.com/matecat/ReorderingTest/blob/master/output_it-IT.json)
 
 e scritti su disco, con i suddetti nomi, nella directory [`output`](https://github.com/matecat/ReorderingTest/tree/master/output). 
-#### *Si noti che questi due file sono le effettive soluzioni dell'esercizio.*
+#### *Si noti che questi due files sono le effettive soluzioni dell'esercizio.*
 
 ## Descrizione del payload
 Ogni oggetto presente nel field `export_phrases` ha i seguenti fields:
