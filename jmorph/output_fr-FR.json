@@ -1,0 +1,40 @@
+{
+  "metadata" : {
+    "source_locale" : "en",
+    "target_locale" : "fr-FR"
+  },
+  "collections" : [ {
+    "name" : "counting_rhyme",
+    "export_phrases" : [ {
+      "value" : "Eeny, meeny, miny, moe",
+      "created_at" : "2013-02-07T07:00:28Z"
+    }, {
+      "value" : "Catch the tiger by his toe",
+      "created_at" : "2013-02-07T07:01:28Z"
+    }, {
+      "value" : "If it hollers let it go",
+      "created_at" : "2013-02-07T08:00:28Z"
+    }, {
+      "value" : "Eeny, meeny, miny, moe.",
+      "created_at" : "2013-02-07T09:00:28Z"
+    } ]
+  }, {
+    "name" : "sing_that_song",
+    "export_phrases" : [ {
+      "value" : "Load up on guns, bring your friends",
+      "created_at" : "2012-02-07T10:50:23Z"
+    }, {
+      "value" : "It's fun to lose and to pretend",
+      "created_at" : "2012-02-07T10:50:24Z"
+    }, {
+      "value" : "She's over-bored and self-assured",
+      "created_at" : "2012-02-07T10:50:28Z"
+    }, {
+      "value" : "Oh no, I know a dirty word",
+      "created_at" : "2012-02-07T10:53:23Z"
+    }, {
+      "value" : "Hello, hello, hello, how low",
+      "created_at" : "2012-02-07T11:53:23Z"
+    } ]
+  } ]
+}
